@@ -5,10 +5,10 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.preprocessing import LabelEncoder
 
 # Load and prep data
-results = pd.read_csv('data/results.csv')
-races = pd.read_csv('data/races.csv')
-drivers = pd.read_csv('data/drivers.csv')
-constructors = pd.read_csv('data/constructors.csv')
+results = pd.read_csv('results.csv')
+races = pd.read_csv('races.csv')
+drivers = pd.read_csv('drivers.csv')
+constructors = pd.read_csv(constructors.csv')
 
 df = results.merge(races, on='raceId')
 df = df.merge(drivers, on='driverId')

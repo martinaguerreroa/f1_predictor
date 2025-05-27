@@ -8,7 +8,7 @@ from sklearn.preprocessing import LabelEncoder
 results = pd.read_csv('results.csv')
 races = pd.read_csv('races.csv')
 drivers = pd.read_csv('drivers.csv')
-constructors = pd.read_csv(constructors.csv')
+constructors = pd.read_csv('constructors.csv')
 
 df = results.merge(races, on='raceId')
 df = df.merge(drivers, on='driverId')

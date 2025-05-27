@@ -6,10 +6,10 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.metrics import classification_report
 
 # Load the F1 race data from files
-results = pd.read_csv('data/results.csv')
-races = pd.read_csv('data/races.csv')
-drivers = pd.read_csv('data/drivers.csv')
-constructors = pd.read_csv('data/constructors.csv')
+results = pd.read_csv('results.csv')
+races = pd.read_csv('races.csv')
+drivers = pd.read_csv('drivers.csv')
+constructors = pd.read_csv('constructors.csv')
 
 # Step 2: Combine the files into one big table of useful data
 df = results.merge(races, on='raceId')
